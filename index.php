@@ -12,7 +12,16 @@ if(isset($_POST['submit']))
         ->description($_POST['description'])
     ->address($_POST['address']);
 
-    echo "<a href='".$link->google()."' target='_blank' >CLICK HEAR </a>";
+    echo "<a href='".$link->google()."' target='_blank' >CLICK HEAR GOOGLE </a>";
+    echo "<br>";
+   echo "<a href='".$link->yahoo()."' target='_blank' >CLICK HEAR FOR YAHOOO </a>";
+    echo "<br>";
+    echo "<a href='".$link->webOutlook()."' target='_blank' >CLICK HEAR FOR WEB_OUT_LOOK </a>";
+    echo "<br>";
+    echo "<a href='". $link->ics()."' target='_blank' >CLICK HEAR FOR ICS </a>";
+
+
+    // 2021-09-22 18:00
 }
 
 ?>
@@ -25,9 +34,9 @@ if(isset($_POST['submit']))
         text-align: center;
     }
 </style>
-<html>
+<html lang="">
 <body>
-<form class="test_style method="post">
+<form  class="test_style" method="Post">
    <p><label class="text-left"  for="title">Title:</label><br>
     <input class="text-center"  type="text" id="title" name="title" ><br></p>
 
